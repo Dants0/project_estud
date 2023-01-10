@@ -14,10 +14,11 @@ app.post('/contact', (req,res)=>{
         const {email} = req.body;
         const {profile} = req.body;
         const {ideias} = req.body;
+        const {file} = req.body;
 
-        let sql = `INSERT INTO contact_user_form(nome, email, profile, ideias) values (?,?,?,?)`
+        let sql = `INSERT INTO contact_user_form(nome, email, profile, file, ideias) values (?,?,?,?,?)`
 
-        connection.query(sql, [name, email, profile, ideias], (err, result)=>{
+        connection.query(sql, [name, email, profile, file, ideias], (err, result)=>{
             res.send(result)
         })
     }catch(err){
