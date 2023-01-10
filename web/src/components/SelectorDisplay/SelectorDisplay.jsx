@@ -1,18 +1,14 @@
 import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
+import { Moon, Sun } from 'phosphor-react'
 import axios from 'axios'
 
-
 import styles from './styles.module.scss'
+import { controller } from '../../assets/controllerApi'
 
 const baseUrl = 'https://type.fit/api/quotes';
 let data;
 const numberQuotes = () => Math.floor(Math.random() * data.length) + 1;
-
-const controller = {
-  messageError: 'A chamada não foi feita com sucesso',
-  messageSuccess: 'A requisição foi feita com sucesso'
-}
 
 const SelectorDisplay = () => {
   const [citacoes, setCitacoes] = useState({})
@@ -34,6 +30,13 @@ const SelectorDisplay = () => {
     }
   }
 
+  const changeBg = () => {
+    const checkbox = document.querySelector('.checkbox')
+    checkbox.addEventListener('change', ()=>{
+      document.body.classList.toggle('dark')
+    })
+  }
+ 
   return (
     <div className={styles.container}>
       <div className={styles.content_left}>
@@ -58,6 +61,12 @@ const SelectorDisplay = () => {
             Programação
           </Link>
         </div>
+        <input type="checkbox" id='checkbox' className={styles.checkbox} onClick={changeBg}/>
+        <label htmlFor="checkbox" className={styles.label}>
+          <Moon size={20} color="#fcfcfc" weight="thin" />
+          <Sun size={20} color="#bac700" weight="thin" />
+          <span className={styles.ball}></span>
+        </label>
       </div>
     </div>
   )

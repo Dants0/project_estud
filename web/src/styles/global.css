@@ -4,7 +4,7 @@
     --bg-color-header: #ABB8A5;
     --bg-color-selector: #89AE80;
     --text-title-theme-color: #f1f1f1;
-    --bg-color-content: #f1f1f1;
+    /* --bg-color-content: #f1f1f1; */
 }
 
 * {
@@ -19,6 +19,6 @@
     height: 100%;
 }
 
-body{
-    background-color: #271A45;
+body.dark{
+    background-color: #252525;
 }
