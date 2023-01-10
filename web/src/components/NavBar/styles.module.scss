@@ -5,13 +5,7 @@ header {
     height: 5rem;
     padding: 0.5rem 1rem;
     background-color: var(--bg-color-header);
-
-    .searchIcon{
-        width: 1.5rem;
-        height: 1.5rem;
-        margin-right: 0.5rem;
-        background-color: #000;
-    }
+    border-bottom: 1px solid rgb(0, 0, 0);
 
     h1 {
         font-size: 26px;
@@ -43,10 +37,16 @@ header {
             gap: 1rem;
             width: 20rem;
             font-size: 18px;
-
+            
             li {
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                // background-color:#f1f1f1;
+                // border-radius: 5px;
+                // height: 2rem;
+                // width: 20rem;
                 list-style-type: none;
-                
                 a {
                     &{
                         display: block;
