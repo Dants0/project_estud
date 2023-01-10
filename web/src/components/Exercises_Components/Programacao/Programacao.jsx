@@ -1,13 +1,13 @@
 import React from 'react'
 import ShowQuestions from '../../ShowQuestions/ShowQuestions'
 
-const Portugues = () => {
+const Programacao = () => {
   return (
     <>
         <ShowQuestions/>
-        <p>Português</p>
+        <p>Programação</p>
     </>
   )
 }
 
-export default Portugues
+export default Programacao

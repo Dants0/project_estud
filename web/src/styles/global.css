@@ -4,6 +4,7 @@
     --bg-color-header: #ABB8A5;
     --bg-color-selector: #89AE80;
     --text-title-theme-color: #f1f1f1;
+    --bg-color-content: #f1f1f1;
 }
 
 * {
@@ -15,6 +16,9 @@
 }
 
 .main_container_home_page {
-    /* display: flex; */
     height: 100%;
+}
+
+body{
+    background-color: #271A45;
 }

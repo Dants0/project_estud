@@ -9,7 +9,6 @@ const NavBar = () => {
     return (
         <header className={styles.container}>
             <h1>EstudY</h1>
-            <input type="search" placeholder='Pesquise um tema' /> 
     
             <nav>
                 <ul>
@@ -30,6 +29,7 @@ const NavBar = () => {
                     </li>
                 </ul>
             </nav>
+            <input type="search" placeholder='Pesquise um tema' /> 
         </header>
     )
 }

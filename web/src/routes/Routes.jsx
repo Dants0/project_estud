@@ -11,6 +11,8 @@ import Contact from "../pages/Contact";
 //Components
 import ShowQuestions from "../components/ShowQuestions/ShowQuestions";
 import Matemática from "../components/Exercises_Components/Matematica/Matemática";
+import Portugues from "../components/Exercises_Components/Portugues/Portugues";
+import Programacao from "../components/Exercises_Components/Programacao/Programacao";
 
 const PathRoutes = () => {
   return (
@@ -22,6 +24,8 @@ const PathRoutes = () => {
 
 
     <Route path='/matematica/exercicios' element={<Matemática/>}/>
+    <Route path='/portugues/exercicios' element={<Portugues/>}/>
+    <Route path='/programacao/exercicios' element={<Programacao/>}/>
     </Routes>
   )
 }
