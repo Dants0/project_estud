@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import ShowQuestions from '../ShowQuestions/ShowQuestions'
+
 
 import styles from './styles.module.scss'
 
@@ -13,7 +13,7 @@ const SelectorDisplay = () => {
         </div>
         <div className={styles.content}>
           <Link to='/matematica/exercicios'>
-            Matematica
+            Matemática
           </Link>
         </div>
       </div>

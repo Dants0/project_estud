@@ -15,6 +15,10 @@
         border-left: 1px solid #000;
         border-bottom: 1px solid #000;
         border-bottom-left-radius: 5px;
+        a{
+            color: #f1f1f1;
+            text-decoration: none;
+        }
         .title{
             color: var(--text-title-theme-color);
             font-weight: lighter;

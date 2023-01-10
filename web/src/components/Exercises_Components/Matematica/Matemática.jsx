@@ -1,13 +1,13 @@
 import React from 'react'
-import NavBar from '../../NavBar/NavBar'
-import SelectorDisplay from '../../SelectorDisplay/SelectorDisplay'
+import ShowQuestions from '../../ShowQuestions/ShowQuestions'
 
 const Matemática = () => {
-  return (
-    <>
-        <p>Matematica</p>
-    </>
-  )
+    return (
+        <>
+            <ShowQuestions/>
+            <p>Matematica</p>
+        </>
+    )
 }
 
 export default Matemática

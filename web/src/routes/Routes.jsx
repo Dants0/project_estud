@@ -10,6 +10,7 @@ import Contact from "../pages/Contact";
 
 //Components
 import ShowQuestions from "../components/ShowQuestions/ShowQuestions";
+import Matemática from "../components/Exercises_Components/Matematica/Matemática";
 
 const PathRoutes = () => {
   return (
@@ -20,7 +21,7 @@ const PathRoutes = () => {
     {/* <Route path="*" element={<Page404/>}/> */}
 
 
-    <Route path='/matematica/exercicios' element={<ShowQuestions/>}/>
+    <Route path='/matematica/exercicios' element={<Matemática/>}/>
     </Routes>
   )
 }

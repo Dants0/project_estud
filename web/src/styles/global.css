@@ -13,3 +13,8 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
+
+.main_container_home_page {
+    /* display: flex; */
+    height: 100%;
+}

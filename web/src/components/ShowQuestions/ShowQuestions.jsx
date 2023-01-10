@@ -10,7 +10,7 @@ const ShowQuestions = () => {
     <div className="show_questions_container">
         <NavBar/>
         <SelectorDisplay/>
-        <Matemática/>
+        {/* <Matemática/> */}
     </div>
   )
 }
