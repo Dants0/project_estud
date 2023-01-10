@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import NavBar from '../NavBar/NavBar'
 import axios from 'axios'
 
-import { User, Envelope, GithubLogo } from 'phosphor-react'
+import { User, Envelope, GithubLogo, File } from 'phosphor-react'
 import styles from './styles.module.scss'
 import { controller } from '../../assets/controllerApi'
 
@@ -28,6 +28,7 @@ const ContactForm = () => {
         email: contactInfo.email,
         profile: contactInfo.profile,
         ideias: contactInfo.ideias,
+        file: contactInfo.file
       }).then(result => {
         console.log(result)
       }).catch(err => {
@@ -55,6 +56,11 @@ const ContactForm = () => {
         <label htmlFor="">
         <GithubLogo size={32} color="#1d1d1b" weight="light" />
         <input name="profile" id="profile" type="text" placeholder="Link Github" onChange={handleChangeValues} />
+        </label>
+
+        <label htmlFor="">
+        <File size={32} color="#1d1d1b" weight="light" />
+        <input name="file" id="file" type="file" onChange={handleChangeValues} />
         </label>
 
         <label htmlFor="">Ideias para adicionar</label>
