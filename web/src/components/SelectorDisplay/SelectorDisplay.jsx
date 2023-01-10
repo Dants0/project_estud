@@ -30,11 +30,17 @@ const SelectorDisplay = () => {
     }
   }
 
-  const changeBg = () => {
-    const checkbox = document.querySelector('.checkbox')
-    checkbox.addEventListener('change', ()=>{
-      document.body.classList.toggle('dark')
-    })
+  const changeBg = (state, action) => {
+    switch(action.type){
+      case 'Toggle':
+        return {darkMode: !state.darkMode}
+        default:
+          return state
+    }
+    // const checkbox = document.querySelector('.checkbox')
+    // checkbox.addEventListener('change', ()=>{
+    //   document.body.classList.toggle('dark')
+    // })
   }
  
   return (
@@ -56,6 +62,18 @@ const SelectorDisplay = () => {
           </Link>
           <Link to='/portugues/exercicios'>
             Português
+          </Link>
+          <Link to='/programacao/exercicios'>
+            Programação
+          </Link>
+          <Link to='/programacao/exercicios'>
+            Programação
+          </Link>
+          <Link to='/programacao/exercicios'>
+            Programação
+          </Link>
+          <Link to='/programacao/exercicios'>
+            Programação
           </Link>
           <Link to='/programacao/exercicios'>
             Programação
