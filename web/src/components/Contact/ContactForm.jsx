@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import NavBar from '../NavBar/NavBar'
 import axios from 'axios'
-// import { questions } from '../../../../backend/api/questionsApi'
 
 import { User, Envelope, GithubLogo } from 'phosphor-react'
 import styles from './styles.module.scss'
@@ -21,20 +20,18 @@ const ContactForm = () => {
   console.log(contactInfo)
 
   const HandleSubmitForm = () => {
-    let date = new Date()
     if(contactInfo==undefined){
-      window.alert('Please enter a contact data')
+      window.alert(controller.messageError)
     }else{
       axios.post(baseUrl,{
-        name:contactInfo.name,
+        name: contactInfo.name,
         email: contactInfo.email,
         profile: contactInfo.profile,
         ideias: contactInfo.ideias,
-        date: date.toLocaleString()
-      }).then(controller => {
-        console.log(controller.messageSuccess)
+      }).then(result => {
+        console.log(result)
       }).catch(err => {
-        console.log(controller.messageError)
+        console.log(err)
       })
     }
   }
